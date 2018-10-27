@@ -1,0 +1,17 @@
+DL_POLY : nacl
+units eV
+molecular types 2 
+sodium atoms
+nummols 256 
+atoms 1
+Na           23.0        0.97      1     0    1
+finish
+chlorine atoms
+nummols 256 
+atoms 1
+Cl           35.0       -0.97      1     0    1
+finish
+vdw        2 
+Na      Cl      buck       1108.0     0.3      0.0           
+Cl      Cl      buck       505.0      0.44     0.0
+close 

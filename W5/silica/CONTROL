@@ -1,0 +1,15 @@
+DL_POLY : Glass 216 tetrahedra
+temperature            300
+pressure               0.001
+steps                  3000
+timestep               0.001 ps
+ensemble npt ber 1.0 1.0
+traj 1 50 1
+cutoff                 10.0 angstrom
+rvdw                   7.5 angstrom 
+delr                   1.0 angstrom
+ewald precision 0.00001
+print every 10 steps
+job time  28800 seconds
+close time     100 seconds
+finish
