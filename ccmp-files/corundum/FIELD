@@ -1,0 +1,18 @@
+corundum
+units eV
+molecular types 2 
+aluminium atoms
+nummols 720 
+atoms 1
+Al             26.98      3.0   1     0    1
+finish
+oxygen atoms
+nummols 1080
+atoms 1
+O              16.0      -2.0   1     0    1
+finish
+vdw        3 
+Al      O       buck    16957.53   0.194   12.59
+Al      Al      buck    31120.2    0.154    5.25
+O       O       buck    22764.0    0.149   27.88 
+close

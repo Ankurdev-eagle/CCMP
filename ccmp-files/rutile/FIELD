@@ -1,0 +1,25 @@
+quartz
+units eV
+molecular types 3 
+Uranium atoms
+nummols 1
+atoms 1
+U             238.04      2.196   1     0    1 
+finish
+titanium atoms
+nummols 979 
+atoms 1
+Ti             28.09      2.196   1     0    1
+finish
+oxygen atoms
+nummols 1960
+atoms 1
+O              16.0      -1.098   1     0    1
+finish
+vdw        5 
+O       O       tab
+Ti      O       tab
+Ti      Ti      tab
+U       O       tab
+U       Ti      tab
+close

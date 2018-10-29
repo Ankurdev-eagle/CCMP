@@ -1,0 +1,334 @@
+ ******************************************************************
+ *************  stfc/ccp5  program  library  package  ** D ********
+ *************  daresbury laboratory general purpose  *** L *******
+ **         **  classical molecular dynamics program  **** \ ******
+ ** DL_POLY **  authors:   i.t.todorov   &   w.smith  ***** P *****
+ **         **  version:   4.09    /   february 2016  ****** O ****
+ *************  execution on           1 process(es)  ******* L ***
+ *************  contributors' list:                   ******** Y **
+ *************  ------------------------------------  *************
+ *************  i.j.bush, h.a.boateng, r.davidchak,   *************
+ *************  m.a.seaton, a.v.brukhno, a.m.elena,   *************
+ *************  s.l.daraszewicz,g.khara,s.t.murphy    *************
+
+ ******************************************************************
+
+ ******************************************************************
+ **** birthday: Aug 29 2018 @ 15:14:25                         ****
+ ****  machine: DESKTOP-FOHENEO                                ****
+ ****  builder: dr faustroll                                   ****
+ **** compiler: gfortran v5.4.0 20160609 (serial build)        ****
+ **** executed: 2018-09-20  @  15:32:46.356  (GMT+01:00)       ****
+ ******************************************************************
+
+ ******************************************************************
+ ****  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ****
+ ****  Please do cite `J. Mater. Chem.', 16, 1911-1918 (2006)  ****
+ ****  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ****
+ ****  when publishing research data obtained using DL_POLY_4  ****
+ ****  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ****
+ ******************************************************************
+
+
+ I/O read method: parallel by using MPI-I/O (assumed)
+ I/O readers (assumed)                   1
+ I/O read batch size (assumed)     2000000
+ I/O read buffer size (assumed)      20000
+ I/O parallel read error checking off (assumed)
+
+ I/O write method: parallel by using MPI-I/O (assumed)
+ I/O write type: data sorting on (assumed)
+ I/O writers (assumed)                   1
+ I/O write batch size (assumed)    2000000
+ I/O write buffer size (assumed)     20000
+ I/O parallel write error checking off (assumed)
+
+
+ node/domain decomposition (x,y,z):      1     1     1
+
+ pure cutoff driven limit on largest possible decomposition:     8 nodes/domains (2,2,2)
+
+ pure cutoff driven limit on largest balanced decomposition:     1 nodes/domains (1,1,1)
+
+ cutoffs driven limit on largest possible decomposition:     8 nodes/domains (2,2,2)
+
+ cutoffs driven limit on largest balanced decomposition:     1 nodes/domains (1,1,1)
+
+ link-cell decomposition 1 (x,y,z):      2     2     2
+
+ warning issued    100
+
+ *** warning - primary link cell algorithm has a link cell dimension that is < 3 !!! ***
+ *** DL_POLY_4 RUNNING IN LOW EFFICIENCY MODE !!! ***
+
+
+ *** pre-scanning stage (set_bounds) DONE ***
+
+ time elapsed since job start:        0.065 sec
+
+ **********************************************************************************************************************************
+ **********************************************************************************************************************************
+ **********************************************************************************************************************************
+ ************************     DL_POLY : Glass 216 tetrahedra                                               ************************
+ **********************************************************************************************************************************
+ **********************************************************************************************************************************
+ **********************************************************************************************************************************
+
+
+ SIMULATION CONTROL PARAMETERS
+
+ simulation temperature (K)          3.0000E+02
+
+ simulation pressure (katms)         0.0000E+00
+
+ selected number of timesteps        10000
+
+ equilibration period (steps)         7000
+
+ temperature scaling on (during equilibration)
+ temperature scaling interval            1
+
+ Integration : Velocity Verlet
+ Ensemble : NPT isotropic Berendsen
+ thermostat relaxation time (ps)     1.0000E+00
+ barostat relaxation time   (ps)     1.0000E+00
+
+ real space cutoff (Angs)            1.0000E+01
+
+ vdw cutoff (Angs)                   1.0000E+01
+
+ warning issued     35
+
+ *** warning - DL_POLY_2/Classic directive 'delr - Verlet shell strip cutoff' defaulted to ***
+ *** DL_POLY_4 directive 'rpad - real space cutoff padding option' ; rpad=Max(rpad,delr/4) !!! ***
+
+ cutoff padding (Angs)               2.5000E-01
+
+ Electrostatics : Smooth Particle Mesh Ewald
+ Ewald sum precision                 4.0000E-05
+ Ewald convergence parameter (A^-1)  2.6068E-01
+ Ewald kmax1 kmax2 kmax3   (x2)    10   12   12
+ B-spline interpolation order            8
+
+ data printing interval (steps)         20
+
+ statistics file interval              100
+
+ clean start requested
+
+ Extended Coulombic eXclusion : NO
+
+ fixed simulation timestep (ps)      1.0000E-03
+
+ data dumping interval (steps)        1000
+
+ subcelling threshold density        5.0000E+01
+
+ allocated job run time   (s)        1.0000E+07
+
+ allocated job close time (s)        1.0000E+02
+
+
+ SYSTEM SPECIFICATION
+
+ energy units = eV
+
+
+ number of molecular types               2
+
+
+ molecular species type                  1
+
+ name of species:             aluminium atoms                         
+
+ number of molecules                   720
+
+ number of atoms/sites                   1
+
+ atomic characteristics:
+
+               site    name             mass         charge      repeat      freeze
+
+                  1    Al            26.980000       3.000000         1         0
+
+
+ molecular species type                  2
+
+ name of species:             oxygen atoms                            
+
+ number of molecules                  1080
+
+ number of atoms/sites                   1
+
+ atomic characteristics:
+
+               site    name             mass         charge      repeat      freeze
+
+                  1    O             16.000000      -2.000000         1         0
+
+
+ total number of molecules            1800
+
+ total number of sites                   2
+
+
+ number of specified vdw potentials                3
+
+       pair     atom 1  atom 2     key                              parameters
+
+          1     Al      O          buck         16957.530000            0.194000           12.590000            0.000000            0.000000            0.000000            0.000000
+          2     Al      Al         buck         31120.200000            0.154000            5.250000            0.000000            0.000000            0.000000            0.000000
+          3     O       O          buck         22764.000000            0.149000           27.880000            0.000000            0.000000            0.000000            0.000000
+
+ configuration file name: 
+
+          corundum                                                                
+
+
+ selected image convention               3
+
+
+ simulation cell vectors
+
+       23.7400000000        0.0000000000        0.0000000000
+        0.0000000000       24.6600000000        0.0000000000
+        0.0000000000        0.0000000000       25.9000000000
+
+
+ system volume            15162.5955600    
+
+ *** all reading and connectivity checks DONE ***
+
+ time elapsed since job start:        0.092 sec
+
+
+ long-range correction for: vdw energy    -0.757235E+01
+                          : vdw pressure  -0.157936E+01
+
+ *** initialisation and haloing DONE ***
+
+ time elapsed since job start:        0.100 sec
+
+ //==============================================================\\
+ ||                                                              ||
+ ||           SUMMARY  OF  TOPOLOGICAL  DECOMPOSITION            ||
+ ||                                                              ||
+ ||--------------------------------------------------------------||
+ ||  INTERACTION  OR  TYPE  |  GRAND TOTAL | Fully/Partly FROZEN ||
+ ||-------------------------+--------------+---------------------||
+ ||  all particles/sites    |        1800  |  F            0     ||
+ ||  free particles         |        1800  |  F            0     ||
+ ||  core-shell units       |           0  |  P            0     ||
+ ||  constraint bond units  |           0  |  F            0     ||
+ ||  PMF units              |           0  |  P         NONE     ||
+ ||  rigid body units       |           0  |  F            0     ||
+ ||  tethered atom units    |           0  |  F            0     ||
+ ||  chemical bond units    |           0  |  F            0     ||
+ ||  bond angle units       |           0  |  F            0     ||
+ ||  dihedral angle units   |           0  |  F            0     ||
+ ||  inversion angle units  |           0  |  F            0     ||
+ \\==============================================================//
+
+
+ *** bookkeeping DONE ***
+
+ time elapsed since job start:        0.100 sec
+
+
+ degrees of freedom break-down list
+ ----------------------------------
+ free particles                5400
+ centre of mass                  -3
+ non-periodicity                  0
+ frozen free particles            0
+ shell-pseudo                     0
+ constrained                      0
+ RB translational                 0
+ RB rotational                    0
+ ----------------------------------
+ total (real)                  5397
+
+ *** temperature setting DONE ***
+
+ time elapsed since job start:        0.121 sec
+
+
+ sample of starting configuration on node zero
+
+        i       x(i)        y(i)        z(i)       vx(i)       vy(i)       vz(i)
+
+
+        1 -7.1220E+00 -1.2330E+01 -8.4175E+00 -1.1519E-03 -7.6860E+00 -1.2827E+00
+       91  2.3740E+00 -6.9048E+00 -2.5900E-01 -5.5836E-01 -4.8355E+00  2.6682E+00
+      181  0.0000E+00  0.0000E+00 -8.4175E+00  2.0315E+00  4.8958E+00  3.2351E+00
+      271 -4.7480E+00  5.4252E+00 -2.5900E-01  2.2893E+00  2.8205E+00  2.0170E+00
+      361 -7.1220E+00 -1.2330E+01  4.5325E+00  3.6091E+00  5.2416E+00  7.1191E-01
+      451  2.3740E+00 -6.9048E+00  1.2691E+01  3.6060E+00  4.8620E+00  6.3369E+00
+      541  0.0000E+00  0.0000E+00  4.5325E+00  9.5125E+00  3.1795E+00  2.9602E+00
+      631 -4.7480E+00  5.4252E+00  1.2691E+01  2.1166E+00  3.8385E-01  5.4650E-01
+      721 -1.0446E+01 -1.2330E+01 -9.7125E+00 -1.9786E+00 -3.5241E+00 -4.1414E+00
+      811  1.4244E+00 -8.2200E+00 -9.7125E+00 -3.4286E+00  4.9717E+00  2.0368E+00
+      901 -1.0446E+01 -4.1100E+00 -9.7125E+00 -3.9433E+00  2.0681E+00  1.0602E-01
+      991  1.4244E+00  0.0000E+00 -9.7125E+00  3.7398E+00 -4.2390E+00 -7.2531E+00
+     1081 -1.0446E+01  4.1100E+00 -9.7125E+00 -1.0860E+00  3.5001E+00  1.6115E+00
+     1171  1.4244E+00  8.2200E+00 -9.7125E+00 -6.2449E-01 -9.2584E+00 -4.3036E+00
+     1261 -1.0446E+01 -1.2330E+01  3.2375E+00 -4.4735E+00  2.9768E-01  2.2509E+00
+     1351  1.4244E+00 -8.2200E+00  3.2375E+00 -5.7832E+00  9.2841E-01 -4.0052E+00
+     1441 -1.0446E+01 -4.1100E+00  3.2375E+00 -3.7411E+00  2.2088E+00 -3.4052E-01
+     1531  1.4244E+00  0.0000E+00  3.2375E+00 -4.2205E+00  1.6736E+00 -1.7713E+00
+     1621 -1.0446E+01  4.1100E+00  3.2375E+00 -3.0155E+00  5.2718E-01  3.2065E+00
+     1711  1.4244E+00  8.2200E+00  3.2375E+00 -6.6100E+00 -6.0930E+00  7.7610E+00
+
+
+
+ time elapsed since job start:        0.121 sec
+
+ forces evaluated at (re)start for VV integration...
+
+ ----------------------------------------------------------------------------------------------------------------------------------
+
+          step     eng_tot    temp_tot     eng_cfg     eng_src     eng_cou     eng_bnd     eng_ang     eng_dih     eng_tet
+      time(ps)      eng_pv    temp_rot     vir_cfg     vir_src     vir_cou     vir_bnd     vir_ang     vir_con     vir_tet
+      cpu  (s)      volume    temp_shl     eng_shl     vir_shl       alpha        beta       gamma     vir_pmf       press
+
+ ----------------------------------------------------------------------------------------------------------------------------------
+             0 -6.5812E+04  3.0000E+02 -6.5882E+04  2.2919E+03 -6.8174E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+       0.00000 -6.5812E+04  0.0000E+00  3.8957E+04 -2.9320E+04  6.8277E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+         0.309  1.5163E+04  0.0000E+00  0.0000E+00  0.0000E+00  9.0000E+01  9.0000E+01  9.0000E+01  0.0000E+00 -1.3494E+03
+
+       rolling  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+      averages  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+                0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+ ----------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------
+
+          step     eng_tot    temp_tot     eng_cfg     eng_src     eng_cou     eng_bnd     eng_ang     eng_dih     eng_tet
+      time(ps)      eng_pv    temp_rot     vir_cfg     vir_src     vir_cou     vir_bnd     vir_ang     vir_con     vir_tet
+      cpu  (s)      volume    temp_shl     eng_shl     vir_shl       alpha        beta       gamma     vir_pmf       press
+
+ ----------------------------------------------------------------------------------------------------------------------------------
+             1 -6.6570E+04  3.0000E+02 -6.6639E+04  2.9698E+03 -6.9609E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+       0.00100 -6.6570E+04  0.0000E+00  3.3747E+04 -3.5857E+04  6.9605E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+         0.415  1.4242E+04  0.0000E+00  0.0000E+00  0.0000E+00  9.0000E+01  9.0000E+01  9.0000E+01  0.0000E+00 -1.2438E+03
+
+       rolling -6.6570E+04  3.0000E+02 -6.6639E+04  2.9698E+03 -6.9609E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+      averages -6.6570E+04  0.0000E+00  3.3747E+04 -3.5857E+04  6.9605E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+                1.4242E+04  0.0000E+00  0.0000E+00  0.0000E+00  9.0000E+01  9.0000E+01  9.0000E+01  0.0000E+00 -1.2438E+03
+ ----------------------------------------------------------------------------------------------------------------------------------
+            20 -6.8426E+04  3.0000E+02 -6.8496E+04  7.3535E+03 -7.5850E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+       0.02000 -6.8426E+04  0.0000E+00  4.9962E+02 -7.5200E+04  7.5700E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+         2.373  1.1005E+04  0.0000E+00  0.0000E+00  0.0000E+00  9.0000E+01  9.0000E+01  9.0000E+01  0.0000E+00 -1.7246E+01
+
+       rolling -6.8164E+04  3.0000E+02 -6.8234E+04  6.5070E+03 -7.4741E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+      averages -6.8164E+04  0.0000E+00  6.9827E+03 -6.7620E+04  7.4603E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+                1.1582E+04  0.0000E+00  0.0000E+00  0.0000E+00  9.0000E+01  9.0000E+01  9.0000E+01  0.0000E+00 -2.8209E+02
+ ----------------------------------------------------------------------------------------------------------------------------------
+            40 -6.8404E+04  3.0000E+02 -6.8473E+04  7.4514E+03 -7.5925E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+       0.04000 -6.8404E+04  0.0000E+00 -1.5390E+02 -7.5929E+04  7.5775E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+         4.441  1.0973E+04  0.0000E+00  0.0000E+00  0.0000E+00  9.0000E+01  9.0000E+01  9.0000E+01  0.0000E+00  1.4094E+01
+
+       rolling -6.8265E+04  3.0000E+02 -6.8335E+04  6.9615E+03 -7.5296E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+      averages -6.8265E+04  0.0000E+00  3.5790E+03 -7.1579E+04  7.5158E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+                1.1268E+04  0.0000E+00  0.0000E+00  0.0000E+00  9.0000E+01  9.0000E+01  9.0000E+01  0.0000E+00 -1.4190E+02
+ ----------------------------------------------------------------------------------------------------------------------------------
+            60 -6.8389E+04  3.0000E+02 -6.8459E+04  7.4215E+03 -7.5881E+04  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00

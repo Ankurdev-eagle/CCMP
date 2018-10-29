@@ -1,0 +1,17 @@
+quartz
+units eV
+molecular types 2 
+titanium atoms
+nummols 864 
+atoms 1
+Mg             24.30      2.0   1     0    1
+finish
+oxygen atoms
+nummols 864  
+atoms 1
+O              16.0      -2.0   1     0    1
+finish
+vdw        2
+Mg      O       buck    946.627    0.31813   0.0 
+O       O       buck    22764.0    0.149     27.88
+close
