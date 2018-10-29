@@ -39,7 +39,15 @@
                         !print *,'Vo',vo
                 endif       
         ENDDO
-        
+        amu = 1.6605E-27
+        zK_Si = (vsi*1000*28.09*amu)/2
+        zK_O = (vo*1000*16.0*amu)/2
+        zKsys = K_Si + K_O
+        zN = 648
+        zKb = 0.1381E-22
+        temp = (2*zKsys)/(3*zN*zKb)
+        print *, temp
+
         avsi = vsi/216
         avo = vo/432
         timestep = (m-1)*50
