@@ -5,7 +5,7 @@ steps                  3000
 equilibration steps    3000
 scale every 1
 timestep               0.001 ps
-ensemble npt ber 1.0 1.0
+ensemble nvt ber 1.0
 cutoff                 4.0 angstrom
 rvdw                   4.0 angstrom 
 delr                   1.0 angstrom
