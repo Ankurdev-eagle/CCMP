@@ -20,7 +20,8 @@
         read(40,40) xnoneed
         read(40,40) xnoneed
         
-        DO m = 1, 80  !Outer loop on number of timesteps
+        DO m = 1, 80  !Loop over entire timeframe
+        !Do this for all 3 files
         timestep = (m-1)*50
         
         ! skips the timestep line
@@ -56,5 +57,5 @@
                 endif
         ENDDO
 
-        ENDDO   !Ends the outer loop on number of timesteps
+        ENDDO   !Ends the outer loop on timeframes
         end program read

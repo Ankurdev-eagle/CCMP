@@ -12,7 +12,7 @@
         read(10,10) xnoneed
         read(10,10) xnoneed
         
-        DO m = 1, 60  !Outer loop on number of timesteps
+        DO m = 1, 60  !Loop over the time frame
         read(10,10) xnoneed ! skips the timestep line
 
         vsi = 0
@@ -45,5 +45,5 @@
         timestep = (m-1)*50
         write(20,*) timestep , avsi, avo, temp
         
-        ENDDO   !Ends the outer loop on number of timesteps
+        ENDDO   !Ends the outer loop on timeframe
         end program read
