@@ -11,10 +11,19 @@
         open(20,file='value')
         read(10,10) xnoneed
         read(10,10) xnoneed
+        write(20,*) 'Time   Energy   Volume    Temperature' 
         
+        avg = 0
         DO i=1,30
         read(10,20)n1,t,nval
         read(10,30)(a(k),k=1,nval)
-        write(20,*)t,a(1)
-        ENDDO
+        write(20,*)t,a(1),a(19),a(2)
+        
+        if (i.gt.20) then
+                avg = avg + a(1)
+        endif        
+        end do
+        avg = avg/10.0
+        print *, avg
         end program analyse
+
