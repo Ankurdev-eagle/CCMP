@@ -1,3 +1,0 @@
-if [ "${DISPLAY%%:*}" = "localhost" ] ; then
-	export DISPLAY=127.0.0.1${DISPLAY##localhost}
-fi
