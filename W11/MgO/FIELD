@@ -1,0 +1,24 @@
+quartz
+units eV
+molecular types 3 
+Uranium atoms
+nummols 1
+atoms 1
+U             238.04      2.0     1     0    1 
+finish
+magnesium atoms
+nummols 863 
+atoms 1
+Mg             24.31      2.0     1     0    1
+finish
+oxygen atoms
+nummols 864 
+atoms 1
+O              16.0      -2.0     1     0    1
+finish
+vdw        4 
+Mg      O       tab
+O       O       tab
+U       Mg      tab
+U       O       tab
+close
