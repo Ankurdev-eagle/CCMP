@@ -7,6 +7,7 @@
       am_si=28.09
       am_u=238.04
       am_zr=91.22
+      am_mg=24.30
       Ntot=81000
       nframes=526
       mk=0
@@ -32,7 +33,7 @@
            d1=v(1,1)
            d2=v(2,2)
            d3=v(3,3)
-      ! print*,mk
+       print*,mk
            Do i=1,(ni+nv)
              read(10,40) names(i),nindex
              read(10,*) a(i,1),a(i,2),a(i,3)
@@ -74,6 +75,12 @@
          0.d0,0.d0,0.d0
         ELSE IF(names(i).EQ.'i_Zr') THEN
          write(20,30) am_zr,'Zr', a(i,1)/d1,a(i,2)/d2,a(i,3)/d3,&
+            0.d0,0.d0,0.d0
+        else if(names(i).EQ.'v_Mg') THEN
+      write(20,30) am_mg,'Mg', a(i,1)/d1,a(i,2)/d2,a(i,3)/d3,&
+         0.d0,0.d0,0.d0
+        ELSE IF(names(i).EQ.'i_Mg') THEN
+         write(20,30) am_mg,'Mg', a(i,1)/d1,a(i,2)/d2,a(i,3)/d3,&
             0.d0,0.d0,0.d0
 
 

@@ -13,7 +13,7 @@
         open(10,file='HISTORY',status='old')
         
         
-  10    Format(A70)
+  10    Format(A80)
   20    Format(A21,1x,I7)
   30    Format(A8,6x,I4,42x,F10.7) 
   40    Format(A2)
@@ -24,7 +24,7 @@
         read(10,10) noneed
         
         DO i=1,nframes
-         
+          print*,i
           
           read(10,30) xnoneed,nstep,time
           
@@ -37,7 +37,7 @@
           DO j=1,natoms
            read(10,40) atype
            read(10,*) a(j,1),a(j,2),a(j,3)
-           read(10,*) vx,vy,vz
+          ! read(10,*) vx,vy,vz
           
           enddo
           call open_write_sav(20,'s',i)
